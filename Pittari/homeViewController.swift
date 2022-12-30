@@ -11,15 +11,31 @@ import UIKit
 
 class homeViewController: UIViewController {
     
+    
     //人数と秒数を入れる変数を宣言
     var totalPeopleNumber: Int = 0
     var idealSeconds: Float = 0.0
+    
+//    // メニュー表示項目
+//        enum MenuType: String {
+//            case 0 = "0"
+//            case 1 = "1"
+//            case 2 = "2"
+//            case 3 = "3"
+//        }
+//        // メニュー選択ボタン
+//        @IBOutlet weak var menuButton: UIButton!
+//
+//        // 選択されたMenuType
+//        var selectedMenuType = MenuType.0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     //人数を入れるPullDownButtonの指示
+    
 
     //秒数を入れるPullDownButtonの指示
     
