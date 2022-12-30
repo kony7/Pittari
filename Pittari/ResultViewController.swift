@@ -15,6 +15,10 @@ class ResultViewController: UIViewController {
     @IBOutlet var resultSecondsLabel: UILabel!
     var idealSeconds: Float = 0.0
     var resultSeconds: Float = 0.0
+    
+    //前のページから引き継いできた人数の合計と秒数
+    var totalPeople: Int = 0
+    var idealSecond: Float = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()

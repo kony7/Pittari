@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A724F434295F08A600CBBF8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F433295F08A600CBBF8F /* AppDelegate.swift */; };
 		A724F436295F08A600CBBF8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F435295F08A600CBBF8F /* SceneDelegate.swift */; };
-		A724F438295F08A600CBBF8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F437295F08A600CBBF8F /* ViewController.swift */; };
+		A724F438295F08A600CBBF8F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724F437295F08A600CBBF8F /* homeViewController.swift */; };
 		A724F43B295F08A600CBBF8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A724F439295F08A600CBBF8F /* Main.storyboard */; };
 		A724F43D295F08AA00CBBF8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A724F43C295F08AA00CBBF8F /* Assets.xcassets */; };
 		A724F440295F08AA00CBBF8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A724F43E295F08AA00CBBF8F /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		A724F430295F08A600CBBF8F /* Pittari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pittari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A724F433295F08A600CBBF8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A724F435295F08A600CBBF8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A724F437295F08A600CBBF8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A724F437295F08A600CBBF8F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		A724F43A295F08A600CBBF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A724F43C295F08AA00CBBF8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A724F43F295F08AA00CBBF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				A724F433295F08A600CBBF8F /* AppDelegate.swift */,
 				A724F435295F08A600CBBF8F /* SceneDelegate.swift */,
-				A724F437295F08A600CBBF8F /* ViewController.swift */,
+				A724F437295F08A600CBBF8F /* homeViewController.swift */,
 				A724F447295F18ED00CBBF8F /* GameViewController.swift */,
 				A724F449295F191300CBBF8F /* ResultViewController.swift */,
 				A724F44B295F194000CBBF8F /* PointViewController.swift */,
@@ -149,7 +149,7 @@
 			files = (
 				A724F44A295F191300CBBF8F /* ResultViewController.swift in Sources */,
 				A724F448295F18ED00CBBF8F /* GameViewController.swift in Sources */,
-				A724F438295F08A600CBBF8F /* ViewController.swift in Sources */,
+				A724F438295F08A600CBBF8F /* homeViewController.swift in Sources */,
 				A724F44C295F194000CBBF8F /* PointViewController.swift in Sources */,
 				A724F434295F08A600CBBF8F /* AppDelegate.swift in Sources */,
 				A724F436295F08A600CBBF8F /* SceneDelegate.swift in Sources */,

@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,9 +113,6 @@
                                 <rect key="frame" x="30" y="388" width="354" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START"/>
-                                <connections>
-                                    <segue destination="Nc1-ji-jiv" kind="show" id="tRf-RQ-nH1"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -143,9 +140,9 @@
         <!--Point View Controller-->
         <scene sceneID="wdm-gm-R99">
             <objects>
-                <viewController id="bJW-fQ-uv9" customClass="PointViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pointViewController" id="bJW-fQ-uv9" customClass="PointViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Cf-q2-eum">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebR-tg-ZWj">
@@ -297,9 +294,9 @@
         <!--Game View Controller-->
         <scene sceneID="7fp-eQ-IfJ">
             <objects>
-                <viewController id="Nc1-ji-jiv" customClass="GameViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameViewController" id="Nc1-ji-jiv" customClass="GameViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V9X-0d-JaM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0人目！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6O-5m-2pZ">
@@ -339,7 +336,7 @@
         <!--Result View Controller-->
         <scene sceneID="2m7-9J-Vz3">
             <objects>
-                <viewController id="tfd-br-LxD" customClass="ResultViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resultViewController" id="tfd-br-LxD" customClass="ResultViewController" customModule="Pittari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ihI-LR-KCo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,9 +372,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="POINT"/>
-                                <connections>
-                                    <segue destination="bJW-fQ-uv9" kind="show" id="cWr-sy-PCK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hRF-h8-QOR"/>
