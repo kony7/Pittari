@@ -247,6 +247,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="CALCULATION"/>
+                                <connections>
+                                    <action selector="result" destination="bJW-fQ-uv9" eventType="touchDragInside" id="yb3-x0-hQu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイント" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdS-OZ-ibd">
                                 <rect key="frame" x="20" y="478" width="374" height="30"/>
@@ -283,6 +286,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5Cr-Pa-VHk"/>
+                    <connections>
+                        <outlet property="totalPontLabel" destination="AdS-OZ-ibd" id="nzq-v3-ic4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zaD-rT-w3u" sceneMemberID="firstResponder"/>
             </objects>
@@ -322,6 +328,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NZE-u5-GcP"/>
+                    <connections>
+                        <outlet property="peopleLabel" destination="I6O-5m-2pZ" id="bff-CS-ql5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqr-od-aI2" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,6 +400,10 @@
                             <constraint firstItem="dwl-KO-IyN" firstAttribute="top" secondItem="dtJ-xs-5i7" secondAttribute="bottom" constant="50" id="wPA-GH-ybu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idealSecondsLabel" destination="ItW-gY-Nn2" id="L1W-UD-2RG"/>
+                        <outlet property="resultSecondsLabel" destination="dtJ-xs-5i7" id="XJ7-hm-PPF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITs-BG-deU" sceneMemberID="firstResponder"/>
             </objects>
