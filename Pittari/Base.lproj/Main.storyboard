@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -123,88 +122,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koL-Jk-iNV">
-                                <rect key="frame" x="20" y="148" width="303.5" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <menu key="menu" id="lTS-yM-CYa">
-                                    <children>
-                                        <command title="1" id="UCN-Ph-Uli"/>
-                                        <command title="2" id="Soq-EK-Yxj"/>
-                                        <command title="3" id="vWf-B7-mCH"/>
-                                        <command title="4" id="gE9-RK-DWn"/>
-                                        <command title="5" id="kl5-ar-yLp"/>
-                                        <command title="6" id="es6-sN-LCR"/>
-                                        <command title="7" id="76J-hN-DVF"/>
-                                        <command title="8" id="fzk-3R-j2f"/>
-                                        <command title="9" id="sQR-YF-JNq"/>
-                                        <command title="10" id="2XC-y6-o9X"/>
-                                        <command title="11" id="z38-SD-Nad"/>
-                                        <command title="12" id="trJ-HW-swd"/>
-                                        <command title="13" id="YZv-bz-fka"/>
-                                        <command title="14" id="KpH-L0-g5N"/>
-                                        <command title="15" id="7j6-4c-bmK"/>
-                                        <command title="16" id="Fgi-p6-YYH"/>
-                                        <command title="17" id="ILh-6M-4Ts"/>
-                                        <command title="18" id="WEm-mf-zxc"/>
-                                        <command title="19" id="lZv-N0-rOx"/>
-                                        <command title="20" id="TAn-Y8-eak"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="0"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBb-3C-9vp">
-                                <rect key="frame" x="333.5" y="320" width="30.5" height="36"/>
+                                <rect key="frame" x="333.5" y="312" width="30.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何ポイント？(How many points)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaU-FY-Jsi">
-                                <rect key="frame" x="20" y="256" width="374" height="24"/>
+                                <rect key="frame" x="20" y="248" width="374" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mji-9v-R4b">
-                                <rect key="frame" x="20" y="310" width="303.5" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <menu key="menu" id="GsQ-jl-M0J">
-                                    <children>
-                                        <command title="1" id="gPv-Um-iFr"/>
-                                        <command title="2" id="1ub-eB-5jq"/>
-                                        <command title="3" id="Tvk-O7-Jcv"/>
-                                        <command title="4" id="JrH-YC-gd9"/>
-                                        <command title="5" id="qGo-eD-NPd"/>
-                                        <command title="6" id="Ein-Y6-DzO"/>
-                                        <command title="7" id="JlM-GU-8ge"/>
-                                        <command title="8" id="7H3-kb-nAW"/>
-                                        <command title="9" id="AN7-gJ-mbj"/>
-                                        <command title="10" id="DAd-0R-rU8"/>
-                                        <command title="11" id="GTl-CT-6lf"/>
-                                        <command title="12" id="M7X-Tn-5bs"/>
-                                        <command title="13" id="Ob4-q5-Irq"/>
-                                        <command title="14" id="7vC-Es-EfV"/>
-                                        <command title="15" id="q8e-1K-LMQ"/>
-                                        <command title="16" id="fF2-vE-Fzc"/>
-                                        <command title="17" id="JbC-hv-Pp5"/>
-                                        <command title="18" id="8mU-dw-mWN"/>
-                                        <command title="19" id="kxn-Xg-TmD"/>
-                                        <command title="20" id="fXg-gi-82y"/>
-                                        <command title="21" id="lvt-e6-NeG"/>
-                                        <command title="22" id="pqo-43-vfl"/>
-                                        <command title="17" id="Iys-xm-gu7" userLabel="23"/>
-                                        <command title="11" id="ubw-OZ-Y25" userLabel="24"/>
-                                        <command title="12" id="NA0-ry-zZQ" userLabel="25"/>
-                                        <command title="13" id="jk8-vS-2z9" userLabel="26"/>
-                                        <command title="18" id="8Mg-oz-eFv" userLabel="27"/>
-                                        <command title="14" id="T0g-0i-w9w" userLabel="28"/>
-                                        <command title="16" id="3k4-7C-Xe8" userLabel="29"/>
-                                        <command title="15" id="msn-Rk-oTY" userLabel="30"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="5"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYI-Qt-t8h">
-                                <rect key="frame" x="20" y="388" width="374" height="50"/>
+                                <rect key="frame" x="20" y="402" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CRE-Ph-wHW"/>
                                 </constraints>
@@ -215,37 +146,55 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイント" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdS-OZ-ibd">
-                                <rect key="frame" x="20" y="478" width="374" height="30"/>
+                                <rect key="frame" x="20" y="492" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkj-ec-4gD">
+                                <rect key="frame" x="30" y="148" width="283.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="nnd-9L-UUQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="pAf-Pb-t4L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyS-6h-QE5">
+                                <rect key="frame" x="30" y="302" width="283.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IHz-Ak-FUk"/>
+                                    <constraint firstAttribute="height" constant="50" id="aP4-0W-6t0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8f5-7b-gll"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ebR-tg-ZWj" firstAttribute="leading" secondItem="koL-Jk-iNV" secondAttribute="trailing" constant="10" id="3rK-cl-JqO"/>
+                            <constraint firstItem="EyS-6h-QE5" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="30" id="1lr-eT-mEb"/>
                             <constraint firstItem="pDX-Tb-9BY" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="20" id="9tJ-ku-bVj"/>
-                            <constraint firstItem="koL-Jk-iNV" firstAttribute="top" secondItem="pDX-Tb-9BY" secondAttribute="bottom" constant="30" id="Beo-5u-OyY"/>
+                            <constraint firstItem="EyS-6h-QE5" firstAttribute="top" secondItem="eaU-FY-Jsi" secondAttribute="bottom" constant="30" id="BFa-Pj-YoK"/>
                             <constraint firstItem="8f5-7b-gll" firstAttribute="trailing" secondItem="jYI-Qt-t8h" secondAttribute="trailing" constant="20" id="FIC-Zh-Sof"/>
-                            <constraint firstItem="jYI-Qt-t8h" firstAttribute="top" secondItem="Mji-9v-R4b" secondAttribute="bottom" constant="30" id="GB9-Ju-ksk"/>
+                            <constraint firstItem="UBb-3C-9vp" firstAttribute="leading" secondItem="EyS-6h-QE5" secondAttribute="trailing" constant="20" id="Gq4-Tn-cKV"/>
+                            <constraint firstItem="jYI-Qt-t8h" firstAttribute="top" secondItem="EyS-6h-QE5" secondAttribute="bottom" constant="50" id="Jtb-kv-aZc"/>
+                            <constraint firstItem="bkj-ec-4gD" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="30" id="KXp-Jv-OQ6"/>
                             <constraint firstItem="8f5-7b-gll" firstAttribute="trailing" secondItem="ebR-tg-ZWj" secondAttribute="trailing" constant="50" id="Mi0-5i-Km6"/>
                             <constraint firstItem="8f5-7b-gll" firstAttribute="trailing" secondItem="UBb-3C-9vp" secondAttribute="trailing" constant="50" id="NrA-dt-OrD"/>
+                            <constraint firstItem="ebR-tg-ZWj" firstAttribute="leading" secondItem="bkj-ec-4gD" secondAttribute="trailing" constant="20" id="Pub-Qb-HY1"/>
                             <constraint firstItem="8f5-7b-gll" firstAttribute="trailing" secondItem="pDX-Tb-9BY" secondAttribute="trailing" constant="20" id="Q9H-xf-j1u"/>
-                            <constraint firstItem="koL-Jk-iNV" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="20" id="UuM-O7-pJc"/>
+                            <constraint firstItem="bkj-ec-4gD" firstAttribute="top" secondItem="pDX-Tb-9BY" secondAttribute="bottom" constant="30" id="TXV-FB-mhI"/>
                             <constraint firstItem="ebR-tg-ZWj" firstAttribute="top" secondItem="pDX-Tb-9BY" secondAttribute="bottom" constant="40" id="V2u-Aj-68c"/>
                             <constraint firstItem="jYI-Qt-t8h" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="20" id="Vgu-1Z-b4w"/>
                             <constraint firstItem="AdS-OZ-ibd" firstAttribute="top" secondItem="jYI-Qt-t8h" secondAttribute="bottom" constant="40" id="XQl-d9-H0Z"/>
                             <constraint firstItem="eaU-FY-Jsi" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="20" id="ZSv-Ia-LfF"/>
-                            <constraint firstItem="UBb-3C-9vp" firstAttribute="leading" secondItem="Mji-9v-R4b" secondAttribute="trailing" constant="10" id="aOd-NZ-fJZ"/>
                             <constraint firstItem="UBb-3C-9vp" firstAttribute="top" secondItem="eaU-FY-Jsi" secondAttribute="bottom" constant="40" id="ab9-7J-LNc"/>
                             <constraint firstItem="8f5-7b-gll" firstAttribute="trailing" secondItem="eaU-FY-Jsi" secondAttribute="trailing" constant="20" id="dSP-hc-qr2"/>
-                            <constraint firstItem="Mji-9v-R4b" firstAttribute="top" secondItem="eaU-FY-Jsi" secondAttribute="bottom" constant="30" id="fUn-IN-pfD"/>
                             <constraint firstItem="8f5-7b-gll" firstAttribute="trailing" secondItem="AdS-OZ-ibd" secondAttribute="trailing" constant="20" id="fe1-6Q-Mh1"/>
-                            <constraint firstItem="Mji-9v-R4b" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="20" id="jPe-Eb-43S"/>
+                            <constraint firstItem="eaU-FY-Jsi" firstAttribute="top" secondItem="bkj-ec-4gD" secondAttribute="bottom" constant="50" id="kF5-6V-VMI"/>
                             <constraint firstItem="pDX-Tb-9BY" firstAttribute="top" secondItem="8f5-7b-gll" secondAttribute="top" constant="50" id="mNK-R6-P2a"/>
                             <constraint firstItem="AdS-OZ-ibd" firstAttribute="leading" secondItem="8f5-7b-gll" secondAttribute="leading" constant="20" id="taE-EE-MSE"/>
-                            <constraint firstItem="eaU-FY-Jsi" firstAttribute="top" secondItem="koL-Jk-iNV" secondAttribute="bottom" constant="60" id="yC4-ho-NNh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5Cr-Pa-VHk"/>
