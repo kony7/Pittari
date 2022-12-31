@@ -11,13 +11,19 @@ import UIKit
 
 class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
-    //Pickerのためのパーツを宣言
+    //------宣言コーナー--------
+    //テキストフィールド
     @IBOutlet var peopleNumberTextField: UITextField!
-    //@IBOutlet var secondNumberTextField:UITextField!
-    var countries: [String] = ["1","2","3","4","5","6"]
-    var pickerView: UIPickerView?
+    @IBOutlet var secondNumberTextField:UITextField!
     
-    //人数と秒数を入れる変数を宣言
+    //選択肢を保存しとく配列
+    var countries: [String] = ["1","2","3","4","5","6","7","8","9","10"]
+    
+    //PickerView
+    var peoplePickerView: UIPickerView?
+    var secondPickerView: UIPickerView?
+    
+    //人数と秒数を入れる変数
     var totalPeopleNumber: Int = 0
     var idealSeconds: Float = 0.0
 
@@ -26,19 +32,26 @@ class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //PickerViewとデリゲートの設定
         let pv = UIPickerView()
         pv.delegate = self
         pv.dataSource = self
-        
+    
         peopleNumberTextField.delegate = self
         peopleNumberTextField.inputAssistantItem.leadingBarButtonGroups = []
         peopleNumberTextField.inputView = pv
         
-        self.pickerView = pv
+        secondNumberTextField.delegate = self
+        secondNumberTextField.inputAssistantItem.leadingBarButtonGroups = []
+        secondNumberTextField.inputView = pv
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-                tap.cancelsTouchesInView = false
-                self.view.addGestureRecognizer(tap)
+        self.peoplePickerView = pv
+        self.secondPickerView = pv
+        
+        //テキストフィードじゃないとこ選択したらUIPickerViewが閉じる
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:          #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
 
         
     }
@@ -57,10 +70,14 @@ class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         }
     //PickerView押した時の指示
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            //押されたときの指示
-        peopleNumberTextField.text = countries[row]
-        print(row)
-        totalPeopleNumber = row
+        //押されたときにPickerViewによって指示を変更
+        if pickerView == peoplePickerView{
+            peopleNumberTextField.text = countries[row]
+            totalPeopleNumber = row
+        }else if pickerView == secondPickerView{
+            secondNumberTextField.text = countries[row]
+            idealSeconds = Float(row)
+        }
         }
     
     //スタートボタンを押したときに呼び出す

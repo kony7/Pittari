@@ -96,6 +96,7 @@
                     </view>
                     <connections>
                         <outlet property="peopleNumberTextField" destination="fIA-Fh-tpe" id="j63-d2-YfE"/>
+                        <outlet property="secondNumberTextField" destination="QrU-wX-upM" id="PFV-LM-gH7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
