@@ -36,12 +36,15 @@ class ResultViewController: UIViewController {
     
     //ボタンを押したら遷移
     @IBAction func nextButton(){
-        let nextView = storyboard?.instantiateViewController(withIdentifier: "pointViewController") as! PointViewController
-            
-        //一個前から引き継いだ値と合計得点を次の画面に
-        //nextView.
-
-          //遷移を実行
-        self.present(nextView, animated: true, completion: nil)
+//        let nextView = storyboard?.instantiateViewController(withIdentifier: "pointViewController") as! PointViewController
+//
+//        //一個前から引き継いだ値と合計得点を次の画面に
+//        //nextView.
+//
+//          //遷移を実行
+//        self.present(nextView, animated: true, completion: nil)
+        
+        //トップの階層に戻る
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true,completion: nil)
     }
 }

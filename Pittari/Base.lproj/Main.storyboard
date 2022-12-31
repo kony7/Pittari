@@ -70,6 +70,7 @@
                             <constraint firstItem="pdK-nO-Iau" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gTB-k9-LVT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="k5g-ZQ-eea"/>
                     <connections>
                         <outlet property="peopleNumberTextField" destination="fIA-Fh-tpe" id="j63-d2-YfE"/>
                     </connections>
@@ -92,7 +93,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何秒につき？(per second)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDX-Tb-9BY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1秒ずれるにつき" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDX-Tb-9BY">
                                 <rect key="frame" x="20" y="115" width="374" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -268,9 +269,9 @@
                                     <constraint firstAttribute="height" constant="50" id="aD4-53-ihy"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="POINT"/>
+                                <buttonConfiguration key="configuration" style="filled" title="RESTART"/>
                                 <connections>
-                                    <action selector="nextButton" destination="tfd-br-LxD" eventType="touchUpInside" id="F2S-rm-c3s"/>
+                                    <action selector="nextButton" destination="tfd-br-LxD" eventType="touchUpInside" id="bhW-2K-M3H"/>
                                 </connections>
                             </button>
                         </subviews>

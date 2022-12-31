@@ -23,10 +23,6 @@ class PointViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    //秒数を入れるPullDownButtonの指示
-    
-    //ポイントを入れるPullDownButtonの指示
-
     //結果のボタンを押した時に呼び出す
     @IBAction func result(){
         //計算
