@@ -208,22 +208,35 @@
                                     <action selector="allButton" destination="Nc1-ji-jiv" eventType="touchUpInside" id="ZGy-6Q-EYB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さあ下のボタンを押して計測開始！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-y4-7vy">
+                                <rect key="frame" x="30" y="287" width="354" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0jT-wI-MzV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MQw-Vc-jTS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="I6O-5m-2pZ" firstAttribute="top" secondItem="qZa-y4-7vy" secondAttribute="bottom" constant="30" id="Dom-3g-Uzn"/>
                             <constraint firstItem="I6O-5m-2pZ" firstAttribute="centerX" secondItem="V9X-0d-JaM" secondAttribute="centerX" id="EpD-gn-lWx"/>
                             <constraint firstItem="MQw-Vc-jTS" firstAttribute="trailing" secondItem="I6O-5m-2pZ" secondAttribute="trailing" constant="30" id="Nug-0n-zjs"/>
                             <constraint firstItem="Amw-yh-UKg" firstAttribute="top" secondItem="I6O-5m-2pZ" secondAttribute="bottom" constant="50" id="TxO-y8-gQj"/>
                             <constraint firstItem="Amw-yh-UKg" firstAttribute="leading" secondItem="MQw-Vc-jTS" secondAttribute="leading" constant="20" id="aTz-tr-N9c"/>
                             <constraint firstItem="MQw-Vc-jTS" firstAttribute="trailing" secondItem="Amw-yh-UKg" secondAttribute="trailing" constant="20" id="hKt-Dj-iko"/>
+                            <constraint firstItem="MQw-Vc-jTS" firstAttribute="trailing" secondItem="qZa-y4-7vy" secondAttribute="trailing" constant="30" id="kFA-L6-cnj"/>
                             <constraint firstItem="I6O-5m-2pZ" firstAttribute="leading" secondItem="MQw-Vc-jTS" secondAttribute="leading" constant="30" id="lDO-eV-dn5"/>
                             <constraint firstItem="Amw-yh-UKg" firstAttribute="centerY" secondItem="V9X-0d-JaM" secondAttribute="centerY" id="ob3-PG-bZm"/>
+                            <constraint firstItem="qZa-y4-7vy" firstAttribute="leading" secondItem="MQw-Vc-jTS" secondAttribute="leading" constant="30" id="yEC-ac-w0j"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NZE-u5-GcP"/>
                     <connections>
                         <outlet property="allUIButton" destination="Amw-yh-UKg" id="iGB-Fx-yLT"/>
+                        <outlet property="exLabel" destination="qZa-y4-7vy" id="Q5M-bI-i4B"/>
                         <outlet property="peopleLabel" destination="I6O-5m-2pZ" id="bff-CS-ql5"/>
                     </connections>
                 </viewController>

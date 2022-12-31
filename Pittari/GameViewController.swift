@@ -33,6 +33,9 @@ class GameViewController: UIViewController {
     //ボタンの宣言
     @IBOutlet var allUIButton: UIButton!
     
+    //ゲームの状態説明のためのラベル
+    @IBOutlet var exLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -59,7 +62,10 @@ class GameViewController: UIViewController {
           }
         //スタートのボタンをストップに変更
         buttonState = 1
+        exLabel.text = "計測中！10秒だと思ったところでボタンを押そう！"
         allUIButton.setTitle("STOP", for: .normal)
+        allUIButton.backgroundColor = UIColor.red
+        
       }
     
     //ストップボタンを押したら時を止める
@@ -73,6 +79,12 @@ class GameViewController: UIViewController {
         //ストップのボタンを次の画面にいくボタンに変更
         buttonState = 2
         allUIButton.setTitle("NEXT", for: .normal)
+        allUIButton.backgroundColor = UIColor.green
+        if totalPeople == peopleNumber{
+            exLabel.text = "計測終了！下のボタンを押して結果を見よう！"
+        }else{
+            exLabel.text = "計測終了！下のボタンを押して次の人に渡してね！"
+        }
         }
     
     //次の画面へのボタンをしたときに呼ぶ
@@ -91,6 +103,8 @@ class GameViewController: UIViewController {
         //次の画面にいくボタンをスタート画面に変更
         buttonState = 0
         allUIButton.setTitle("START", for: .normal)
+        allUIButton.backgroundColor = UIColor.blue
+        exLabel.text = "さあ、このボタンを押したら計測開始！"
         }
     }
     
