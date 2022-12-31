@@ -85,6 +85,9 @@ class GameViewController: UIViewController {
         else{
         //今の秒数を0に
         count = 0
+        //人数増やす
+        peopleNumber += 1
+        peopleLabel.text = String(peopleNumber+1)+"人目！"
         //次の画面にいくボタンをスタート画面に変更
         buttonState = 0
         allUIButton.setTitle("START", for: .normal)
