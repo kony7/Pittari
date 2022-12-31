@@ -14,7 +14,7 @@ class GameViewController: UIViewController {
     //------宣言コーナー--------
     //前のページから引き継いできた人数の合計と秒数
     var totalPeople: Int = 0
-    var gameIdealSecond: Float = 0.0
+ //   var gameIdealSecond: Float = 0.0
     
     //今の人数を表示する変数とラベル
     var peopleNumber: Int = 0
@@ -107,7 +107,7 @@ class GameViewController: UIViewController {
         //一個前から引き継いだ値と合計得点を次の画面に
         nextView.resultSeconds = totalSecond
         nextView.totalPeople = totalPeople
-        nextView.idealSeconds = gameIdealSecond
+  //      nextView.idealSeconds = gameIdealSecond
 
           //遷移を実行
         self.present(nextView, animated: true, completion: nil)

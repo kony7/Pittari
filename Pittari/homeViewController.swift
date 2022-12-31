@@ -14,18 +14,18 @@ class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     //------宣言コーナー--------
     //テキストフィールド
     @IBOutlet var peopleNumberTextField: UITextField!
-    @IBOutlet var secondNumberTextField:UITextField!
+    //@IBOutlet var secondNumberTextField:UITextField!
     
     //選択肢を保存しとく配列
     var countries: [String] = ["1","2","3","4","5","6","7","8","9","10"]
     
     //PickerView
     var peoplePickerView: UIPickerView?
-    var secondPickerView: UIPickerView?
+ //   var secondPickerView: UIPickerView?
     
     //人数と秒数を入れる変数
     var totalPeopleNumber: Int = 0
-    var idealSeconds: Float = 0.0
+//    var idealSeconds: Float = 0.0
 
 
     override func viewDidLoad() {
@@ -41,12 +41,12 @@ class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         peopleNumberTextField.inputAssistantItem.leadingBarButtonGroups = []
         peopleNumberTextField.inputView = pv
         
-        secondNumberTextField.delegate = self
-        secondNumberTextField.inputAssistantItem.leadingBarButtonGroups = []
-        secondNumberTextField.inputView = pv
+//        secondNumberTextField.delegate = self
+//        secondNumberTextField.inputAssistantItem.leadingBarButtonGroups = []
+//        secondNumberTextField.inputView = pv
         
         self.peoplePickerView = pv
-        self.secondPickerView = pv
+//        self.secondPickerView = pv
         
         //テキストフィードじゃないとこ選択したらUIPickerViewが閉じる
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:          #selector(self.dismissKeyboard))
@@ -71,13 +71,13 @@ class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     //PickerView押した時の指示
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //押されたときにPickerViewによって指示を変更
-        if pickerView == peoplePickerView{
+     //   if pickerView == peoplePickerView{
             peopleNumberTextField.text = countries[row]
             totalPeopleNumber = row
-        }else if pickerView == secondPickerView{
-            secondNumberTextField.text = countries[row]
-            idealSeconds = Float(row)
-        }
+    //    }else if pickerView == secondPickerView{
+    //        secondNumberTextField.text = countries[row]
+     //       idealSeconds = Float(row)
+     //   }
         }
     
     //スタートボタンを押したときに呼び出す
@@ -88,7 +88,7 @@ class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
         //GameViewControllerの中にあるtotalPeople変数にこの画面のtotakNumberを、idealSecondsをgameIdealSeconds引き渡す
         nextView.totalPeople = totalPeopleNumber
-        nextView.gameIdealSecond = idealSeconds
+//        nextView.gameIdealSecond = idealSeconds
 
           //遷移を実行
           self.present(nextView, animated: true, completion: nil)

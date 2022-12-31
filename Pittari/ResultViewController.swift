@@ -18,14 +18,15 @@ class ResultViewController: UIViewController {
     
     //前のページから引き継いできた人数の合計と秒数
     var totalPeople: Int = 0
-    var idealSecond: Float = 0.0
+//    var idealSecond: Float = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         //理想の結果を人数かける秒数で求めて代入しラベルに表示
-        idealSeconds = Float(totalPeople) * idealSecond
+        //ここ10秒じゃなくするなら変更かけるとこ
+        idealSeconds = Float(totalPeople+1) * 10
         idealSecondsLabel.text = String(idealSeconds)
         
         //前の画面の合計秒数を表示
