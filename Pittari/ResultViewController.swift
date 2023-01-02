@@ -10,11 +10,17 @@ import UIKit
 //結果を表示する
 class ResultViewController: UIViewController {
 
-    //理想と結果の秒数を表示するラベルと変数を宣言
+    //理想の秒数を表示するラベルと変数を宣言
     @IBOutlet var idealSecondsLabel: UILabel!
-    @IBOutlet var resultSecondsLabel: UILabel!
     var idealSeconds: Float = 0.0
+    
+    //結果の秒数を表示するラベルと変数を宣言
+    @IBOutlet var resultSecondsLabel: UILabel!
     var resultSeconds: Float = 0.0
+    
+    //差を入れるためのラベルと変数を宣言
+    @IBOutlet var differenceLabel: UILabel!
+    var differenceSecond: Float = 0.0
     
     //前のページから引き継いできた人数の合計と秒数
     var totalPeople: Int = 0
@@ -32,6 +38,14 @@ class ResultViewController: UIViewController {
         //前の画面の合計秒数を表示
         resultSecondsLabel.text = String(resultSeconds)
         
+        //差を出してラベルに表示
+        differenceSecond = idealSeconds - resultSeconds
+        if differenceSecond <= 0{
+            differenceSecond = differenceSecond * -1
+            differenceLabel.text = String(differenceSecond)
+        }else{
+            differenceLabel.text = String(differenceSecond)
+        }
     }
     
     //ボタンを押したら遷移

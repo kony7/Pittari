@@ -17,7 +17,7 @@ class homeViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     //@IBOutlet var secondNumberTextField:UITextField!
     
     //選択肢を保存しとく配列
-    var countries: [String] = ["1","2","3","4","5","6","7","8","9","10"]
+    var countries: [String] = ["1","2","3","4","5","6","7","8","9","10","11","12"]
     
     //PickerView
     var peoplePickerView: UIPickerView?
