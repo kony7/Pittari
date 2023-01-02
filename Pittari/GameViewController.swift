@@ -36,6 +36,9 @@ class GameViewController: UIViewController {
     //ゲームの状態説明のためのラベル
     @IBOutlet var exLabel: UILabel!
     
+    //一人一人の秒数を入れる配列
+    var secondsArray: Array = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -76,6 +79,8 @@ class GameViewController: UIViewController {
             }
         //合計変数に今の秒数を追加
         totalSecond += count
+        //配列に秒数を保存
+        secondsArray.append(String(peopleNumber+1)+"人目は"+String(count)+"秒")
         //ストップのボタンを次の画面にいくボタンに変更
         buttonState = 2
         allUIButton.setTitle("NEXT", for: .normal)
@@ -121,7 +126,7 @@ class GameViewController: UIViewController {
         //一個前から引き継いだ値と合計得点を次の画面に
         nextView.resultSeconds = totalSecond
         nextView.totalPeople = totalPeople
-  //      nextView.idealSeconds = gameIdealSecond
+        nextView.secondsPerPeople = secondsArray
 
           //遷移を実行
         self.present(nextView, animated: true, completion: nil)

@@ -8,7 +8,7 @@
 import UIKit
 
 //結果を表示する
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     //理想の秒数を表示するラベルと変数を宣言
     @IBOutlet var idealSecondsLabel: UILabel!
@@ -22,9 +22,15 @@ class ResultViewController: UIViewController {
     @IBOutlet var differenceLabel: UILabel!
     var differenceSecond: Float = 0.0
     
+    //一人一人の成績の入った配列を引き継ぐ
+    var secondsPerPeople: Array = [String]()
+    
     //前のページから引き継いできた人数の合計と秒数
     var totalPeople: Int = 0
 //    var idealSecond: Float = 0.0
+    
+    //テーブルビューの宣言
+    @IBOutlet var table: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +52,10 @@ class ResultViewController: UIViewController {
         }else{
             differenceLabel.text = String(differenceSecond)
         }
+        
+        //テーブルビューの設定
+        table.dataSource = self
+        table.delegate = self
     }
     
     //ボタンを押したら遷移
@@ -60,5 +70,18 @@ class ResultViewController: UIViewController {
         
         //トップの階層に戻る
         self.presentingViewController?.presentingViewController?.dismiss(animated: true,completion: nil)
+    }
+    
+    //一人一人の成績を表示するテーブルビューの設定
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return secondsPerPeople.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SecondCell")
+        
+        print(secondsPerPeople[indexPath.row])
+        cell?.textLabel?.text = secondsPerPeople[indexPath.row]
+        return cell!
     }
 }
